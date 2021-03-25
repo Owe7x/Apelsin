@@ -1,0 +1,56 @@
+.title {
+    font-size: 60px;
+    line-height: 78px;
+    color: $green;
+    font-family: 'Lora', serif;
+    @include breakpoint($bp-1200) {
+        font-size: 55px;
+        line-height: 70px;
+    }
+    @include breakpoint($bp-1000) {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    @include breakpoint($bp-800) {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    @include breakpoint($bp-600) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    @include breakpoint($bp-400) {
+        font-size: 27px;
+        line-height: 35px;
+    }
+}
+.orange {
+    color: $orange;
+}
+.p {
+    font-size: 20px;
+    line-height: 30px;
+    @include breakpoint($bp-1200) {
+        font-size: 19px;
+        line-height: 28px;
+    }
+    @include breakpoint($bp-1000) {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    @include breakpoint($bp-800) {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    @include breakpoint($bp-600) {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    @include breakpoint($bp-400) {
+        font-size: 11px;
+        line-height: 16px;
+    }
+}
+.green-color {
+    color: $green;
+}

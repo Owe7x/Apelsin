@@ -1,0 +1,69 @@
+#set {
+    padding-bottom: 100px;
+    @include breakpoint($bp-400) {
+        padding-bottom: 50px;
+     }
+}
+.set-info {
+    max-width: 1144px;
+    margin: 100px auto 60px;
+    @include breakpoint($bp-1200) {
+        padding: 0 15px;
+    }
+    .title {
+        max-width: 658px;
+        margin-bottom: 50px;
+    }
+    .p {
+        max-width: 949px;
+        margin-bottom: 40px;
+    }
+    &__links {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 930px;
+        margin: 0 auto;
+        @include breakpoint($bp-1000) {
+            justify-content: center;
+        }
+    }
+    &-link {
+        position: relative;
+        padding-left: 50px;
+        width: 450px;
+        font-size: 18px;
+        line-height: 27px;
+        font-style: italic;
+        margin-bottom: 16px;
+        @include breakpoint($bp-1200) {
+            font-size: 17px;
+            line-height: 25px;
+        }
+        @include breakpoint($bp-600) {
+            font-size: 15px;
+            line-height: 21px;
+        }
+        @include breakpoint($bp-500) {
+            margin-bottom: 20px;
+        }
+        @include breakpoint($bp-400) {
+            font-size: 13px;
+            line-height: 17px;
+        }
+        &::after {
+            background: url(../images/star-2.png);
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            @include breakpoint($bp-500) {
+                top: -5px;
+            }
+        }
+    }
+}

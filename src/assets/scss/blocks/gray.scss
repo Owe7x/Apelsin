@@ -1,0 +1,322 @@
+#gray {
+    background: #ffffff;
+    padding: 100px 0;
+    @include breakpoint($bp-1200) {
+        padding: 100px 15px;
+    }
+    @include breakpoint($bp-400) {
+        padding: 50px 15px 40px;
+    }
+}
+.gray-text {
+    .title {
+        max-width: 1144px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        @include breakpoint($bp-800) {
+            text-align: center;
+        }
+    }
+    .p {
+        max-width: 1144px;
+        margin: 0 auto;
+        margin-bottom: 56px;
+        position: relative;
+        z-index: 1;
+        @include breakpoint($bp-800) {
+            text-align: center;
+        }
+    }
+}
+.blocks-info {
+    max-width: 1144px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.block-info {
+    max-width: 368px;
+    margin-bottom: 83px;
+    @include breakpoint($bp-1200) {
+        width: 33%;
+    }
+    @include breakpoint($bp-800) {
+        width: 49%;
+    }
+    @include breakpoint($bp-400) {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    &__img {
+        margin-bottom: 20px;
+        box-shadow: 0px 29px 25px -9px rgba(214, 196, 180, 0.6);
+        img {
+            @include breakpoint($bp-1200) {
+                width: 100%;
+            }
+        }
+
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 27px;
+        font-style: italic;
+        padding-left: 40px;
+        position: relative;
+        &::after {
+            background: url(../images/star.png);
+            display: block;
+            content: '';
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        @include breakpoint($bp-600) {
+            font-size: 15px;
+            line-height: 21px;
+        }
+    }
+    &:nth-child(2) {
+        margin-top: 80px;
+        @include breakpoint($bp-800) {
+            margin-top: 0;
+        }
+    }
+    &:nth-child(3) {
+        margin-top: 160px;
+        @include breakpoint($bp-800) {
+            margin-top: 0;
+        }
+    }
+    &:nth-child(4) {
+        margin-top: -160px;
+        @include breakpoint($bp-800) {
+            margin-top: 0;
+        }
+    }
+    &:nth-child(5) {
+        margin-top: -80px;
+        @include breakpoint($bp-800) {
+            margin-top: 0;
+        }
+    }
+}
+.price-blocks__img {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    @include breakpoint($bp-1200) {
+        width: 100%;
+    }
+    @include breakpoint($bp-400) {
+        flex-direction: column;
+    }
+}
+.price-block-info {
+    max-width: 1234px;
+    height: 204px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 124px;
+    padding-right: 134px;
+    background: #A8CDC1;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    &__text {
+        font-size: 25px;
+        font-style: italic;
+        line-height: 37.5px;
+        max-width: 670px;
+        @include breakpoint($bp-1200) {
+            font-size: 23px;
+            line-height: 33px;
+        }
+        @include breakpoint($bp-1000) {
+            font-size: 21px;
+            line-height: 27px;
+            max-width: 550px;
+        }
+        @include breakpoint($bp-850) {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        @include breakpoint($bp-800) {
+            font-size: 19px;
+            line-height: 23px;
+        }
+        @include breakpoint($bp-600) {
+            font-size: 17px;
+            line-height: 17px;
+        }
+    }
+    @include breakpoint($bp-1200) {
+        padding: 0 40px;
+    }
+    @include breakpoint($bp-1000) {
+        padding: 0 10px;
+    }
+    @include breakpoint($bp-850) {
+        flex-direction: column;
+        height: auto;
+        padding: 35px;
+    }
+}
+.container-1234 {
+    max-width: 1234px;
+    margin: 100px auto 0;
+    @include breakpoint($bp-400) {
+        margin: 50px auto 0;
+    }
+}
+.master {
+    .title {
+        text-align: center;
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 2;
+        @include breakpoint($bp-900) {
+            margin-bottom: 40px;
+        }
+    }
+    .p {
+        max-width: 1080px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+    &__info-block {
+        background: #FFFFFF;
+        border: 1px solid #5C8A7E;
+        padding: 60px 78px 50px;
+        margin-top: -70px;
+        margin-bottom: 60px;
+        position: relative;
+        z-index: 2;
+        @include breakpoint($bp-1200) {
+            padding: 60px 20px 50px;
+        }
+        @include breakpoint($bp-1050) {
+            padding: 60px 10px 50px;
+        }
+        @include breakpoint($bp-400) {
+            padding: 20px 10px;
+        }
+        @include breakpoint($bp-400) {
+            margin-bottom: 30px;
+         }
+    }
+    &__info-title {
+        max-width: 1070px;
+        text-align: center;
+        font-size: 25px;
+        line-height: 37.5px;
+        margin-bottom: 50px;
+        @include breakpoint($bp-1200) {
+            font-size: 23px;
+            line-height: 33px;
+        }
+        @include breakpoint($bp-1000) {
+            font-size: 21px;
+            line-height: 27px;
+        }
+        @include breakpoint($bp-800) {
+            font-size: 19px;
+            line-height: 23px;
+        }
+        @include breakpoint($bp-600) {
+            font-size: 17px;
+            line-height: 17px;
+        }
+        @include breakpoint($bp-400) {
+            font-size: 15px;
+            line-height: 17px;
+        }
+    }
+    img {
+        margin-top: -140px;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        @include breakpoint($bp-900) {
+            margin-top: -110px;
+        }
+        @include breakpoint($bp-800) {
+            margin-top: -80px;
+        }
+        @include breakpoint($bp-500) {
+            margin-top: -40px;
+        }
+    }
+
+}
+.master-block {
+    position: relative;
+    padding-left: 50px;
+    font-size: 18px;
+    line-height: 27px;
+    font-style: italic;
+    width: 465px;
+    margin-bottom: 15px;
+    &::after {
+        background: url(../images/star-2.png);
+        display: block;
+        content: '';
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include breakpoint($bp-500) {
+            top: -5px;
+        }
+    }
+    @include breakpoint($bp-1200) {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    @include breakpoint($bp-1000) {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    @include breakpoint($bp-600) {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    @include breakpoint($bp-500) {
+        margin-bottom: 25px;
+    }
+    @include breakpoint($bp-400) {
+       font-size: 11px;
+    }
+    
+}
+.master__info-blocks {
+    max-width: 930px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.price-block-img {
+    @include breakpoint($bp-1200) {
+        width: 33%;
+    }
+    @include breakpoint($bp-400) {
+        width: 100%;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    img {
+        @include breakpoint($bp-1200) {
+            width: 100%;
+        }
+    }
+}

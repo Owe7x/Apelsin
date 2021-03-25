@@ -1,0 +1,49 @@
+#green-step {
+    background: #A8CDC1;
+    padding: 50px 0 30px;
+    .form {
+        margin: 0 auto;
+    }
+    @include breakpoint($bp-400) {
+        padding: 50px 0 0;
+    }
+}
+.step {
+    max-width: 969px;
+    margin: 66px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &-block {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        &__number {
+            font-family: 'Stephanie';
+            color: $orange;
+            width: 85px;
+            font-size: 60px;
+            line-height: 99px;
+            @include breakpoint($bp-500) {
+                width: 20%;
+            }
+        }
+        &__info {
+            width: 358px;
+            margin-left: 40px;
+            margin-top: 10px;
+            @include breakpoint($bp-500) {
+                width: 80%;
+            }
+        }
+        @include breakpoint($bp-500) {
+            width: 100%;
+        }
+    }
+    @include breakpoint($bp-500) {
+        padding: 0 15px;
+    }
+    @include breakpoint($bp-400) {
+        margin: 36px auto 0;
+    }
+}

@@ -1,0 +1,44 @@
+@import "vars";
+@import "mixins";
+@import "vendor/reset";
+@import "blocks/stylesheet.scss";
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $primary;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Blocks */
+@import "blocks/header.scss";
+@import "blocks/text.scss";
+@import "blocks/form.scss";
+@import "blocks/step.scss";
+@import "blocks/profit.scss";
+@import "blocks/gray.scss";
+@import "blocks/modal-1.scss";
+@import "blocks/btn.scss";
+@import "blocks/price.scss";
+@import "blocks/hours.scss";
+@import "blocks/program.scss";
+@import "blocks/set.scss";
+@import "blocks/example.scss";
+@import "blocks/slick.scss";
+@import "blocks/slick-theme.scss";
+@import "blocks/profitability.scss";
+@import "blocks/questions.scss";
+@import "blocks/footer.scss";

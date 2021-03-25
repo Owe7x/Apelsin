@@ -1,0 +1,154 @@
+#profit {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    @include breakpoint($bp-1200) {
+        padding: 100px 15px;
+    }
+    @include breakpoint($bp-400) {
+        padding: 50px 15px 50px;
+    }
+    .title {
+        max-width: 1140px;
+        margin: 0 auto 50px;
+        text-align: center;
+    }
+    .p {
+        max-width: 1144px;
+        margin: 0 auto 60px;
+    }
+    &::after {
+        background: url(../images/bg-1.jpg);
+        display: block;
+        content: '';
+        position: absolute;
+        width: 1167px;
+        height: 1167px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        @include breakpoint($bp-1539) {
+            display: none;
+        }
+    }
+    &::before {
+        background: url(../images/bg-2.jpg);
+        display: block;
+        content: '';
+        position: absolute;
+        width: 1167px;
+        height: 1167px;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.table {
+    max-width: 754px;
+    margin: 0 auto;
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        &__b {
+            color: $white;
+            padding: 15px 0;
+            background: #5C8A7E;
+            width: 368px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            &-orange {
+                background: #F37029;
+            }
+            @include breakpoint($bp-1200) {
+                font-size: 19px;
+                line-height: 28px;
+            }
+            @include breakpoint($bp-1000) {
+                font-size: 17px;
+                line-height: 26px;
+            }
+            @include breakpoint($bp-800) {
+                font-size: 15px;
+                line-height: 20px;
+            }
+            @include breakpoint($bp-600) {
+                font-size: 13px;
+                line-height: 16px;
+            }
+            @include breakpoint($bp-400) {
+                font-size: 10px;
+                line-height: 12px;
+                padding: 7px;
+            }
+
+        }
+    }
+    &-main {
+        border: 1px solid #5C8A7E;
+        border-top: none;
+        &__title {
+            background: #F9F9F9;
+            color: $gray;
+            text-align: center;
+            font-size: 18px;
+            line-height: 27px;
+            font-style: italic;
+            padding: 10px 0;
+            @include breakpoint($bp-1200) {
+                font-size: 17px;
+                line-height: 25px;
+            }
+            @include breakpoint($bp-1000) {
+                font-size: 15px;
+                line-height: 19px;
+            }
+            @include breakpoint($bp-800) {
+                font-size: 13px;
+                line-height: 16px;
+            }
+            @include breakpoint($bp-600) {
+                font-size: 11px;
+                line-height: 12px;
+            }
+        }
+        &__bs {
+            display: flex;
+
+        }
+    }
+    &-block {
+        padding: 15px 0;
+        width: 50%;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        border-right: 1px solid #5C8A7E;
+        background: #fff;
+        &:last-child {
+            border-right: none;
+        }
+        @include breakpoint($bp-1200) {
+            font-size: 19px;
+            line-height: 28px;
+        }
+        @include breakpoint($bp-1000) {
+            font-size: 17px;
+            line-height: 24px;
+        }
+        @include breakpoint($bp-800) {
+            font-size: 15px;
+            line-height: 20px;
+        }
+        @include breakpoint($bp-600) {
+            font-size: 13px;
+            line-height: 16px;
+        }
+        @include breakpoint($bp-400) {
+            font-size: 11px;
+            line-height: 13px;
+        }
+    }
+}

@@ -1,0 +1,149 @@
+.price {
+    position: relative;
+    &-block {
+        max-width: 1580px;
+        margin: -135px auto 0;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        padding: 235px 0 127px;
+        position: relative;
+        z-index: 2;
+        @include breakpoint($bp-1200) {
+            padding: 235px 15px 127px;
+        }
+        @include breakpoint($bp-1000) {
+            padding: 235px 0 50px;
+        }
+        @include breakpoint($bp-1000) {
+            padding: 235px 0 0;
+        }
+        @include breakpoint($bp-700) {
+            padding: 235px 15px 0;
+        }
+        @include breakpoint($bp-400) {
+            padding: 170px 15px 0;
+        }
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            .title {
+                max-width: 582px!important;
+                margin: 0!important;
+                @include breakpoint($bp-1050) {
+                    max-width: 1020px!important;
+                    text-align: center;
+                }
+            }
+            .p {
+                margin: 70px 0 0!important;
+                max-width: 465px!important;
+                @include breakpoint($bp-1050) {
+                    max-width: 1020px!important;
+                    text-align: center;
+                }
+                @include breakpoint($bp-400) {
+                    margin: 30px 0 0!important;
+                }
+            }
+            @include breakpoint($bp-1050) {
+                flex-direction: column;
+            }
+        }
+        &__p {
+            max-width: 853px;
+            margin-top: 40px;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 60px;
+            @include breakpoint($bp-1200) {
+                font-size: 19px;
+                line-height: 28px;
+            }
+            @include breakpoint($bp-1000) {
+                font-size: 17px;
+                line-height: 24px;
+            }
+            @include breakpoint($bp-800) {
+                font-size: 15px;
+                line-height: 20px;
+            }
+            @include breakpoint($bp-600) {
+                font-size: 13px;
+                line-height: 16px;
+            }
+            @include breakpoint($bp-400) {
+                font-size: 11px;
+                line-height: 12px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        .table {
+            max-width: 1141px;
+        }
+        &__p2 {
+            max-width: 659px;
+            margin: 60px auto 40px;
+            text-align: center;
+            @include breakpoint($bp-400) {
+                margin: 30px auto;
+            }
+        }
+    }
+    &::after {
+        background: url(../images/sheet-2.png);
+        display: block;
+        content: '';
+        position: absolute;
+        width: 388px;
+        height: 487px;
+        top: -200px;
+        right: 0;
+        z-index: 0;
+        @include breakpoint($bp-1400) {
+            display: none;
+        }
+    }
+}
+.wordstat {
+    max-width: 1144px;
+    height: 344px;
+    margin: 52px auto 0;
+    background: #F9F9F9;
+    display: flex;
+    align-items: center;
+    padding-left: 97px;
+    position: relative;
+    &-p {
+        max-width: 562px;
+        font-size: 25px;
+        line-height: 37.5px;
+        font-style: italic;
+        @include breakpoint($bp-1200) {
+            font-size: 23px;
+            line-height: 33px;
+        }
+        @include breakpoint($bp-1000) {
+            font-size: 21px;
+            line-height: 27px;
+        }
+        @include breakpoint($bp-600) {
+            font-size: 19px;
+            line-height: 21px;
+        }
+    }
+    &::after {
+        display: block;
+        content: '';
+        background: url(../images/wordstat.jpg);
+        width: 637px;
+        height: 344px;
+    }
+    @include breakpoint($bp-400) {
+        padding-left: 50px;
+    }
+}
+.container-price {
+    max-width: 1144px;
+    margin: 0 auto;
+}

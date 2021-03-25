@@ -1,0 +1,130 @@
+.footer {
+    padding-top: 100px;
+    position: relative;
+    .title {
+        max-width: 1110px;
+        margin: 0 auto 78px;
+        text-align: center;
+        @include breakpoint($bp-1200) {
+            padding: 0 15px;
+        }
+    }
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto 100px;
+        &::after {
+            background: url(../images/russia.png);
+            display: block;
+            content: '';
+            position: absolute;
+            top: 26%;
+            right: 0;
+            width: 1132px;
+            height: 714px;
+            z-index: 1;
+        }
+        @include breakpoint($bp-1200) {
+            padding: 0 15px;
+        }
+        @include breakpoint($bp-850) {
+            text-align: center;
+            margin-bottom: 120px;
+        }
+    }
+    &::after {
+        background: url(../images/bg-9.png);
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1920px;
+        height: 1251px;
+        z-index: -1;
+
+    }
+    &-footer {
+        background: #5C8A7E;
+        padding: 44px 0 36px;
+        &__item {
+            font-size: 16px;
+            line-height: 22px;
+            color: $white;
+            a {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 24px;
+                color: $white;
+                text-decoration: none;
+                float: right;
+                margin-bottom: 10px;
+                @include breakpoint($bp-1000) {
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+                @include breakpoint($bp-800) {
+                    float: none;
+                }
+            }
+            @include breakpoint($bp-1000) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+            @include breakpoint($bp-800) {
+                margin-bottom: 25px;
+                text-align: center;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        @include breakpoint($bp-1200) {
+            padding: 44px 15px 36px;
+        }
+        @include breakpoint($bp-800) {
+            padding: 20px 0;
+        }
+    }
+    &-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include breakpoint($bp-800) {
+            flex-direction: column;
+        }
+    }
+}
+.copyright {
+    color: $white;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    @include breakpoint($bp-1000) {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+.politic {
+    font-size: 16px;
+    line-height: 19px;
+    color: #C9E3DC;
+    @include breakpoint($bp-1000) {
+        font-size: 14px;
+        line-height: 15px;
+    }
+}
+.consultation {
+    font-size: 16px;
+    line-height: 19px;
+    @include breakpoint($bp-1000) {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    @include breakpoint($bp-800) {
+        text-align: center;
+        margin-top: 10px;
+    }
+}

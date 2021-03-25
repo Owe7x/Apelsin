@@ -1,0 +1,97 @@
+#hours {
+    padding: 100px 0 271px;
+    position: relative;
+    .title {
+        max-width: 1142px;
+        margin: 0 auto;
+        @include breakpoint($bp-800) {
+            text-align: center;
+        }
+        @include breakpoint($bp-850) {
+            padding-bottom: 100px;
+        }
+    }
+    &::after {
+        background: url(../images/model-lp.png);
+        display: block;
+        content: '';
+        position: absolute;
+        top: 40%;
+        right: 0;
+        width: 949px;
+        height: 605px;
+        z-index: -1;
+        @include breakpoint($bp-1400) {
+            top: 28%;
+            left: 0;
+            margin-left: 200px;
+        }
+        @include breakpoint($bp-1200) {
+            margin-left: 100px;
+        }
+        @include breakpoint($bp-1200) {
+            margin-left: 0;
+            background-repeat: no-repeat;
+            background-size: 90%;
+            width: 95%;
+            height: 100%;
+            left: 5%;
+        }
+        @include breakpoint($bp-1000) {
+            top: 30%;
+        }
+        @include breakpoint($bp-850) {
+            top: 35%;
+        }
+        @include breakpoint($bp-800) {
+            top: 25%;
+        }
+        @include breakpoint($bp-750) {
+            top: 35%;
+        }
+        @include breakpoint($bp-400) {
+            top: 37%;
+        }
+    }
+    @include breakpoint($bp-1200) {
+        padding: 100px 15px 0;
+    }
+    @include breakpoint($bp-800) {
+        padding: 0px 15px 0;
+    }
+}
+.hours__inner {
+    max-width: 1144px;
+    margin: 184px auto 0;
+    position: relative;
+    display: flex;
+    &-text {
+        max-width: 639px;
+        .p {
+            margin-bottom: 40px;
+        }
+    }
+    @include breakpoint($bp-1400) {
+        margin-top: 650px;
+    }
+    @include breakpoint($bp-1000) {
+        margin-top: 550px;
+    }
+    @include breakpoint($bp-850) {
+        margin-top: 500px;
+    }
+    @include breakpoint($bp-800) {
+        margin-top: 430px;
+    }
+    @include breakpoint($bp-750) {
+        margin-top: 300px;
+    }
+    @include breakpoint($bp-450) {
+        margin-top: 180px;
+    }
+    @include breakpoint($bp-400) {
+        margin-top: 100px;
+    }
+    
+
+}

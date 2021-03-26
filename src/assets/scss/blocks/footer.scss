@@ -47,42 +47,22 @@
         background: #5C8A7E;
         padding: 44px 0 36px;
         &__item {
-            font-size: 16px;
-            line-height: 22px;
-            color: $white;
             a {
-                font-size: 20px;
-                font-weight: bold;
-                line-height: 24px;
+                font-size: 16px;
+                line-height: 22px;
                 color: $white;
                 text-decoration: none;
-                float: right;
-                margin-bottom: 10px;
-                @include breakpoint($bp-1000) {
-                    font-size: 18px;
-                    line-height: 20px;
+                &:hover {
+                    color: #b8b8b8;
                 }
-                @include breakpoint($bp-800) {
-                    float: none;
-                }
-            }
-            @include breakpoint($bp-1000) {
-                font-size: 14px;
-                line-height: 18px;
             }
             @include breakpoint($bp-800) {
-                margin-bottom: 25px;
+                margin-bottom: 20px;
                 text-align: center;
                 &:last-child {
-                    margin-bottom: 0px;
+                    margin-bottom: 0;
                 }
             }
-        }
-        @include breakpoint($bp-1200) {
-            padding: 44px 15px 36px;
-        }
-        @include breakpoint($bp-800) {
-            padding: 20px 0;
         }
     }
     &-container {
@@ -91,6 +71,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 15px;
         @include breakpoint($bp-800) {
             flex-direction: column;
         }
@@ -108,23 +89,62 @@
     }
 }
 .politic {
-    font-size: 16px;
-    line-height: 19px;
-    color: #C9E3DC;
-    @include breakpoint($bp-1000) {
-        font-size: 14px;
-        line-height: 15px;
+    a {
+        font-size: 16px;
+        line-height: 19px;
+        color: #C9E3DC;
+        font-weight: normal;
+        float: left;
+        text-decoration: none;
+        @include breakpoint($bp-1000) {
+            font-size: 14px;
+            line-height: 15px;
+        }
     }
 }
 .consultation {
-    font-size: 16px;
-    line-height: 19px;
+    a {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: normal;
+        text-decoration: none;
+        color: #F9F9F9;
+        @include breakpoint($bp-1000) {
+            font-size: 14px;
+            line-height: 15px;
+        }
+        @include breakpoint($bp-800) {
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+}
+.tel {
+    a {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 24px;
+        color: $white;
+        text-decoration: none;
+        float: right;
+        margin-bottom: 10px;
+        @include breakpoint($bp-1000) {
+            font-size: 18px;
+            line-height: 20px;
+        }
+        @include breakpoint($bp-800) {
+            float: none;
+        }
+    }
     @include breakpoint($bp-1000) {
         font-size: 14px;
-        line-height: 15px;
+        line-height: 18px;
     }
     @include breakpoint($bp-800) {
+        margin-bottom: 10px;
         text-align: center;
-        margin-top: 10px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
     }
 }

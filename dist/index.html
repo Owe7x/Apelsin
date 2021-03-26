@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Lora:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <!-- Useful meta tags -->
@@ -108,7 +109,7 @@
         </section>
         <section id="profit">
             <div class="title">
-               <span class="orange">Перешагните порог 70 000 рублей чистой прибыли </span>  уже на третий месяц
+               <span class="orange">Перешагните порог <div class="b">70 000</div>  рублей чистой прибыли </span>  уже на третий месяц
             </div>
             <div class="p">
                 Средние показатели по рынку франшиз бывают обманчивы. Всё зависит от сферы и подготовленности головной компании. Чем больше информации и поддержки вы получаете, тем быстрее и прибыльнее развивается дело. Мы верим, что вы сможете поставить новые рекорды и обновить нашу колонку «Результаты по опыту».
@@ -251,7 +252,7 @@
                         Все эти факторы позволяют получать ежемесячную <span class="orange"> прибыль не менее 130 000 рублей </span> с одного салона.
                     </div>
                     <div class="modal-1__btn">
-                        <a href="#footer" ><button class="btn" > Зайти в гости</button> </a>
+                        <a data-fancybox href="#modal" ><button class="btn" > Зайти в гости</button> </a>
                     </div>
                 </div>
                 <div class="price-block">
@@ -270,7 +271,7 @@
                             </div>
                         </div>
                         <div class="price-block__p">
-                            Вместе с увеличением спроса растут и цены на услуги для конечного клиента,  а это повышает рентабельность процедур. 
+                            Вместе с увеличением спроса растут и цены на услуги для конечного клиента, а это повышает рентабельность процедур. 
                         </div>
                         <div class="table">
                             <div class="table-header">
@@ -407,7 +408,7 @@
                            <span class="orange"> Начните прибыльное дело в сфере красоты и эстетики. </span> Заработайте на постоянно растущем спросе на услуги  с низкой себестоимостью
                         </div>
                         <div class="price-block-info__btn">
-                            <a href="#footer" ><button class="btn">Рассчитать вложения и прибыль</button></a>
+                            <a data-fancybox href="#modal"><button class="btn">Рассчитать вложения и прибыль</button></a>
                         </div>
                     </div>
                 </div>
@@ -461,7 +462,7 @@
                     <div class="p">
                         На начальном этапе персонал проходит обучение в онлайн-формате. Узнаёт о стандартах сети и азах техники продаж услуг и косметики для домашнего ухода. По мере развития салона обучаются новые мастера и пополняется база знаний текущего персонала. 
                     </div>
-                    <a href="#footer" ><button class="btn btn--long">Познакомиться с лектором</button> </a>
+                    <a data-fancybox href="#modal" ><button class="btn btn--long">Познакомиться с лектором</button> </a>
                 </div>
         
             </div>
@@ -475,13 +476,13 @@
             </div>
             <div class="program-images">
                 <div class="program-img">
-                    <img src="assets/images/program-2.jpg" alt="">
+                    <img src="assets/images/program-2.png" alt="">
                 </div>
                 <div class="program-img">
-                    <img src="assets/images/program-1.jpg" alt="">
+                    <img src="assets/images/program-1.png" alt="">
                 </div>
                 <div class="program-img">
-                    <img src="assets/images/program-3.jpg" alt="">
+                    <img src="assets/images/program-3.png" alt="">
                 </div>
             </div>
         </section>
@@ -490,7 +491,7 @@
                 Вы получите действительно уникальные и результативные авторские методики, ради которых <span class="orange"> люди возвращаются и приводят знакомых и друзей. </span>
             </div>
             <div class="program-block__btn">
-                <a href="#footer" ><button class="btn btn--long">Узнать больше о методиках</button> </a>
+                <a data-fancybox href="#modal" ><button class="btn btn--long">Узнать больше о методиках</button> </a>
                 
             </div>
         </div>
@@ -531,7 +532,7 @@
                     Узнайте больше о мерах поддержки франчайзи. <span class="orange"> Получите полный состав стартового пакета </span>
                 </div>
                 <div class="modal-1__btn">
-                    <a href="#footer" ><button class="btn" > Выслать на почту</button> </a>
+                    <a data-fancybox href="#modal"><button class="btn" > Выслать на почту</button> </a>
                 </div>
             </div>
         </section>
@@ -612,16 +613,56 @@
                 </div>
             </div>
             <div class="wedding multiple-items">
-                <div class="wedding__item"> <img src="assets/images/slick-1.jpg" alt=""> </div>
-                <div class="wedding__item"> <img src="assets/images/slick-2.jpg" alt=""> </div>
-                <div class="wedding__item"> <img src="assets/images/slick-3.jpg" alt=""> </div>
-                <div class="wedding__item"> <img src="assets/images/slick-4.jpg" alt=""> </div>
-                <div class="wedding__item"> <img src="assets/images/slick-5.jpg" alt=""> </div>
-                <div class="wedding__item"> <img src="assets/images/slick-1.jpg" alt=""> </div>
-                <div class="wedding__item"> <img src="assets/images/slick-2.jpg" alt=""> </div>
-                <div class="wedding__item"> <img src="assets/images/slick-3.jpg" alt=""> </div>
-                <div class="wedding__item"> <img src="assets/images/slick-4.jpg" alt=""> </div>
-                <div class="wedding__item"> <img src="assets/images/slick-5.jpg" alt=""> </div>
+                <div class="wedding__item"> 
+                    <a href="assets/images/slick-1.jpg" data-fancybox="images" >
+                        <img src="assets/images/slick-1.jpg" />
+                    </a>
+                </div>
+                <div class="wedding__item"> 
+                    <a href="assets/images/slick-2.jpg" data-fancybox="images" >
+                        <img src="assets/images/slick-2.jpg" />
+                    </a>
+                </div>
+                <div class="wedding__item"> 
+                    <a href="assets/images/slick-3.jpg" data-fancybox="images" >
+                        <img src="assets/images/slick-3.jpg" />
+                    </a>
+                </div>
+                <div class="wedding__item"> 
+                    <a href="assets/images/slick-4.jpg" data-fancybox="images" >
+                        <img src="assets/images/slick-4.jpg" />
+                    </a>
+                </div>
+                <div class="wedding__item"> 
+                    <a href="assets/images/slick-5.jpg" data-fancybox="images" >
+                        <img src="assets/images/slick-5.jpg" />
+                    </a>
+                </div>
+                <div class="wedding__item"> 
+                    <a href="assets/images/slick-1.jpg" data-fancybox="images" >
+                        <img src="assets/images/slick-1.jpg" />
+                    </a>
+                </div>
+                <div class="wedding__item"> 
+                    <a href="assets/images/slick-2.jpg" data-fancybox="images" >
+                        <img src="assets/images/slick-2.jpg" />
+                    </a>
+                </div>
+                <div class="wedding__item"> 
+                    <a href="assets/images/slick-3.jpg" data-fancybox="images" >
+                        <img src="assets/images/slick-3.jpg" />
+                    </a>
+                </div>
+                <div class="wedding__item"> 
+                    <a href="assets/images/slick-4.jpg" data-fancybox="images" >
+                        <img src="assets/images/slick-4.jpg" />
+                    </a>
+                </div>
+                <div class="wedding__item"> 
+                    <a href="assets/images/slick-5.jpg" data-fancybox="images" >
+                        <img src="assets/images/slick-5.jpg" />
+                    </a>
+                </div>
             </div>
         </section>
         <section id="profitability">
@@ -699,27 +740,22 @@
                 <div class="title">
                    <span class="orange"> 5 вопросов о заработке </span> косметологической студии
                 </div>
-                <div class="portfolio-sort">
-                    <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
-                    <label for="tab-btn-1">
+                <div class="spoiler">
+                    <div class="spoiler-block">
                         <div class="questions-menu">
                             <div class="questions-menu__number">
                                 01
                             </div>
                             <div class="questions-menu__text">
-                                Что если ко мне не пойдут клиенты, и мастера будут сидеть без дела?
+                                А что если ко мне не пойдут клиенты, и мастера будут сидеть без дела?
                             </div>
-                            <div class="questions-menu__btn">
-        
+                            <div class="spoiler_links">
                             </div>
                         </div>
-        
-                    </label>
-                    <div class="portfolio__block" id="menu-1">
-                        50% успеха салона красоты — это грамотный подбор локации. С этим поможем. А также ваш салон будет продвигаться вместе с общим брендом через интернет-рекламу.
+                        <div class="spoiler_body">
+                            50% успеха салона красоты — это грамотный подбор локации. С этим поможем. А также ваш салон будет продвигаться вместе с общим брендом через интернет-рекламу.                </div>
                     </div>
-                    <input type="radio" name="tab-btn" id="tab-btn-2" value="">
-                    <label for="tab-btn-2">
+                    <div class="spoiler-block">
                         <div class="questions-menu">
                             <div class="questions-menu__number">
                                 02
@@ -727,17 +763,15 @@
                             <div class="questions-menu__text">
                                 Пройду ли я все проверки?
                             </div>
-                            <div class="questions-menu__btn">
-        
+                            <div class="spoiler_links">
+                                
                             </div>
                         </div>
-        
-                    </label>
-                    <div class="portfolio__block" id="menu-2">
-                        50% успеха салона красоты — это грамотный подбор локации. С этим поможем. А также ваш салон будет продвигаться вместе с общим брендом через интернет-рекламу.
+                        <div class="spoiler_body">
+                            Вы получите консультации по всем требованиям Роспотребнадзора и нормам СанПиНа, а также по ведению бухгалтерии. Так что будете готовы к любой проверке.
+                        </div>
                     </div>
-                    <input type="radio" name="tab-btn" id="tab-btn-3" value="">
-                    <label for="tab-btn-3">
+                    <div class="spoiler-block">
                         <div class="questions-menu">
                             <div class="questions-menu__number">
                                 03
@@ -745,17 +779,13 @@
                             <div class="questions-menu__text">
                                 Как бороться с текучкой кадров?
                             </div>
-                            <div class="questions-menu__btn">
-        
+                            <div class="spoiler_links">
                             </div>
                         </div>
-        
-                    </label>
-                    <div class="portfolio__block" id="menu-3">
-                        50% успеха салона красоты — это грамотный подбор локации. С этим поможем. А также ваш салон будет продвигаться вместе с общим брендом через интернет-рекламу.
+                        <div class="spoiler_body">
+                            Если вы воспользуетесь помощью в подборе кадров и примените все рекомендации по материальной и нематериальной мотивации, то сформируете стабильный костяк из мастеров и администраторов.                </div>
                     </div>
-                    <input type="radio" name="tab-btn" id="tab-btn-4" value="">
-                    <label for="tab-btn-4">
+                    <div class="spoiler-block">
                         <div class="questions-menu">
                             <div class="questions-menu__number">
                                 04
@@ -763,17 +793,13 @@
                             <div class="questions-menu__text">
                                 Как я пойму, что салон окупается и приносит прибыль?
                             </div>
-                            <div class="questions-menu__btn">
-        
+                            <div class="spoiler_links">
                             </div>
                         </div>
-        
-                    </label>
-                    <div class="portfolio__block" id="menu-4">
-                        50% успеха салона красоты — это грамотный подбор локации. С этим поможем. А также ваш салон будет продвигаться вместе с общим брендом через интернет-рекламу.
+                        <div class="spoiler_body">
+                            У вас будет ориентировочный график выручки, привязанный к дате открытия, и контрольные точки, по которым вы сможете оценить рентабельность бизнеса. Все это включено в финансовую модель и стартовый пакет франчайзи.                 </div>
                     </div>
-                    <input type="radio" name="tab-btn" id="tab-btn-5" value="">
-                    <label for="tab-btn-5">
+                    <div class="spoiler-block">
                         <div class="questions-menu">
                             <div class="questions-menu__number">
                                 05
@@ -781,15 +807,13 @@
                             <div class="questions-menu__text">
                                 Не потрачу ли я в 2-3 раза больше на первоначальных вложениях?
                             </div>
-                            <div class="questions-menu__btn">
-        
+                            <div class="spoiler_links">
                             </div>
                         </div>
-        
-                    </label>
-                    <div class="portfolio__block" id="menu-5">
-                        50% успеха салона красоты — это грамотный подбор локации. С этим поможем. А также ваш салон будет продвигаться вместе с общим брендом через интернет-рекламу.
+                        <div class="spoiler_body">
+                            Если вы будете следовать рекомендациям по подбору помещения и интерьерным решениям, то уложитесь в примерную смету. Также вам будут гарантированы выгодные цены на расходные материалы, инструменты и косметику.                </div>
                     </div>
+        
                 </div>
             </div>
             <div class="questions-slider">
@@ -822,6 +846,43 @@
                 </div>
             </div>
         </section>
+        <div style="display: none; width: 500px;" id="modal">
+        	<div class="modal-2">
+                <div class="modal-2__content">
+                    <div class="modal-2__title">Оставьте заявку и получите <span class="orange">бизнес-план для своей локации</span> </div>
+                    <form id="form3" method="post" action="mail.php">
+                        <input type="hidden" name="project_name" value="Апельсин">
+                        <input type="hidden" name="admin_email" value="test@mail.ru">
+                        <input type="hidden" name="form_subject" value="Первая Форма">
+                        <div class="form__link">
+                            <label for="fname"></label>
+                            <input type="text" id="fname" name="fname" placeholder="Город">
+                        </div>
+                        <div class="form__link">
+                            <label for="phone"></label>
+                            <input type="tel" id="phone" name="phone" placeholder="Телефон">
+                        </div>
+                        <div class="form__link">
+                            <label for="user_email"></label>
+                            <input type="email" id="user_email" name="user_email" placeholder="E-mail">
+                        </div>
+                        <button type="submit" value="Submit" class="btn btn--form">Получить фин.модель</button>
+                    </form>
+                    <div class="modal-2__subtitle">
+                        Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a href="№"> политикой конфиденциальности</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-wrapper">
+            <div class="modal-thanks">
+                <div class="modal-2">
+                    <div class="modal-2__content">
+                        <div class="modal-2__thanks">Спасибо за <span class="orange">заявку!</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <section class="footer" id="footer">
@@ -848,7 +909,7 @@
                                 <label for="user_email"></label>
                                 <input type="email" id="user_email" name="user_email" placeholder="E-mail">
                             </div>
-                            <button type="submit" value="Submit" class="btn ">Получить фин.модель</button>
+                            <button type="submit" value="Submit" class="btn btn--form">Получить фин.модель</button>
                         </form>
                         <div class="modal-2__subtitle">
                             Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a href="№"> политикой конфиденциальности</a> 
@@ -863,16 +924,16 @@
                             © «Apelsin Beauty», 2021
                         </div>
                         <div class="politic">
-                            Политика конфиденциальности
+                            <a href="#" target="_blank">Политика конфиденциальности</a>
                         </div>
                     </div>
                     <div class="footer-footer__item">
-                        Франчайзинг 5 - упаковка и продвижение франшиз
+                        <a href="#" target="_blank">Франчайзинг 5 - упаковка и продвижение франшиз</a>
                     </div>
                     <div class="footer-footer__item">
-                       <a href="tel:+78000000000">8 800 000-00-00</a>
+                        <div class="tel"> <a href="tel:+78000000000">8 800 000-00-00</a></div>
                        <div class="consultation">
-                            Бесплатная консультация
+                        <a href="#" target="_blank">Бесплатная консультация</a>
                        </div>
                     </div>
                 </div>
@@ -883,6 +944,7 @@
     <!-- JS -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.4/jquery.fancybox.min.js" integrity="sha512-lu0sjbkK/BSrjKyqcKZbU8rKB9hDW01niztDLKJEt6B0tA9C6tXjv3Z3O6eR2Efv8DcJxRpgue5PWTNRVFNMxg==" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>

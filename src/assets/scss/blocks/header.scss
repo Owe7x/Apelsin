@@ -15,17 +15,41 @@
             max-width: 630px;
             margin-top: 98px;
             margin-left: 450px;
-            @include breakpoint($bp-1400) {
-                margin-left: auto;
+            @include breakpoint($bp-1650) {
+                margin-left: 570px;
+            }
+            @include breakpoint($bp-1539) {
+                margin-left: auto
             }
             @include breakpoint($bp-1200) {
                 padding: 0 15px;
+            }
+            @include breakpoint($bp-1000) {
+                margin: 138px 0 0 20px;
             }
             @include breakpoint($bp-800) {
                 margin: 98px auto 0;
             }
             @include breakpoint($bp-600) {
                 max-width: 550px;
+            }
+            @include breakpoint($bp-450) {
+                max-width: 550px;
+                margin: 60px 0;
+            }
+            @include breakpoint($bp-400) {
+                margin: 96px 0;
+            }
+            @include breakpoint($bp-350) {
+                margin: 50px 0 0;
+            }
+            .title {
+                @include breakpoint($bp-450) {
+                    max-width: 300px;
+                }
+                @include breakpoint($bp-350) {
+                    max-width: 230px;
+                }
             }
         }
         &::before {
@@ -43,6 +67,10 @@
                 background-size: cover;
                 width: 100%;
             }
+            @include breakpoint($bp-450) {
+                height: 500px;
+                top: 0;
+            }
         }
         &::after {
             content: '';
@@ -55,16 +83,22 @@
             bottom: -75px;
             right: 0;
             z-index: -1;
-            @include breakpoint($bp-1400) {
+            @include breakpoint($bp-1539) {
                 display: none;
             }
             
+        }
+        @include breakpoint($bp-1000) {
+            justify-content: unset;
         }
         @include breakpoint($bp-800) {
             height: 500px;
         }
         @include breakpoint($bp-600) {
             height: 400px;
+        }
+        @include breakpoint($bp-450) {
+            justify-content: unset;
         }
     }
     &__p {
@@ -82,10 +116,17 @@
         @include breakpoint($bp-800) {
             font-size: 19px;
             line-height: 23px;
+            max-width: 500px;
         }
         @include breakpoint($bp-600) {
             font-size: 17px;
-            line-height: 17px;
+            line-height: 23px;
+        }
+        @include breakpoint($bp-400) {
+            max-width: 300px;
+        }
+        @include breakpoint($bp-350) {
+            max-width: 280px;
         }
     }
 }

@@ -138,9 +138,12 @@
         background: url(../images/wordstat.jpg);
         width: 637px;
         height: 344px;
+        @include breakpoint($bp-500) {
+            width: 500px;
+        }
     }
-    @include breakpoint($bp-400) {
-        padding-left: 50px;
+    @include breakpoint($bp-500) {
+        padding-left: 30px;
     }
 }
 .container-price {

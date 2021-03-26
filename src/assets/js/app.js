@@ -64,26 +64,29 @@ $("#phone").mask("+7(999) 999-9999")
      phone: 'Это поле является обязательным'
    },
    submitHandler: function(form) {
-    $("#form1").submit(function() { //Change
-      var th = $(this);
-      $.ajax({
-        type: "POST",
-        url: "mail.php", //Change
-        data: th.serialize()
-      }).done(function() {
-        alert("Thank you!");
-        setTimeout(function() {
-          // Done Functions
-          th.trigger("reset");
-        }, 1000);
+    $(".modal-wrapper").addClass('block')
+    setTimeout(function() {
+      $(".modal-wrapper").delay(3000).fadeOut(); 
+      $(".modal-wrapper").removeClass('block')
+    }, 5000);
+
+      $("#form1").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+          type: "POST",
+          url: "mail.php", //Change
+          data: th.serialize()
+        }).done(function() {
+          alert("Thank you!");
+          setTimeout(function() {
+            // Done Functions
+            th.trigger("reset");
+          }, 1000);
+        });
+        return false;
       });
-      return false;
-    });
    }
  });
-
- 
-
 
 
  $('#form2').validate({
@@ -104,6 +107,11 @@ $("#phone").mask("+7(999) 999-9999")
     phone: 'Это поле является обязательным'
    },
    submitHandler: function(form) {
+    $(".modal-wrapper").addClass('block')
+    setTimeout(function() {
+      $(".modal-wrapper").delay(3000).fadeOut(); 
+      $(".modal-wrapper").removeClass('block')
+    }, 5000);
     $("#form2").submit(function() { //Change
       var th = $(this);
       $.ajax({
@@ -139,6 +147,12 @@ $("#phone").mask("+7(999) 999-9999")
     phone: 'Это поле является обязательным'
    },
    submitHandler: function(form) {
+     $('#modal').css('display', 'none')
+    $(".modal-wrapper").addClass('block')
+    setTimeout(function() {
+      $(".modal-wrapper").delay(3000).fadeOut(); 
+      $(".modal-wrapper").removeClass('block')
+    }, 5000);
     $("#form2").submit(function() { //Change
       var th = $(this);
       $.ajax({
@@ -156,4 +170,10 @@ $("#phone").mask("+7(999) 999-9999")
     });
    }
  });
+ $('.spoiler_links').click(function(){
+  $(this).parents().children('.spoiler_body').toggle('slow');
+  $(this).toggleClass('close')
+  return false;
+ });
+
 })

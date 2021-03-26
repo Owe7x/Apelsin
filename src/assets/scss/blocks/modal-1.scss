@@ -71,6 +71,12 @@
         text-align: center;
         margin-bottom: 30px;
     }
+    &__thanks {
+        font-size: 25px;
+        line-height: 37.5px;
+        font-style: italic;
+        text-align: center;
+    }
     form {
         input {
             width: 100%;
@@ -97,4 +103,28 @@
             text-decoration: none;
         }
     }
+}
+.modal-wrapper {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99993;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+.modal-thanks {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -183px;
+    margin-top: -93px;
+    @include breakpoint($bp-400) {
+        margin: -140px;
+    }
+}
+.block {
+    display: block!important;
 }

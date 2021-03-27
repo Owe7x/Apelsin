@@ -22,22 +22,25 @@
                 margin-left: auto
             }
             @include breakpoint($bp-1400) {
-                max-width: 560px;
                 padding: 0 15px;
             }
             @include breakpoint($bp-1300) {
-                max-width: 490px;
                 margin-right: 10px;
             }
             @include breakpoint($bp-1200) {
-                margin: 0;
+                margin-left: auto;
+                max-width: 520px;
+            }
+            @include breakpoint($bp-1000) {
+                margin-right: 0;
+                max-width: 500px;
             }
             @include breakpoint($bp-800) {
                 margin-left: auto;
-                max-width: 380px;
+                max-width: 360px;
             }
             @include breakpoint($bp-600) {
-                max-width: 330px;
+                max-width: 320px;
             }
             @include breakpoint($bp-500) {
                 max-width: 290px;
@@ -47,9 +50,6 @@
             }
             @include breakpoint($bp-400) {
                 margin: 0;
-            }
-            @include breakpoint($bp-350) {
-                margin: 50px 0 0;
             }
             .title {
                 @include breakpoint($bp-450) {
@@ -71,19 +71,30 @@
             top: -125px;
             left: 0px;
             z-index: -1;
+            @include breakpoint($bp-1400) {
+                left: -180px;               
+            }
+            @include breakpoint($bp-1200) {
+                left: -250px;               
+            }
             @include breakpoint($bp-1140) {
                 background-size: cover;
                 width: 100%;
             }
-            @include breakpoint($bp-800) {
+            @include breakpoint($bp-1000) {
                 height: 800px;
-                top: -120px;
+                top: -60px;
                 left: -270px;               
             }
-            @include breakpoint($bp-700) {
+            @include breakpoint($bp-800) {
                 height: 700px;
                 top: -100px;
-                left: -270px;               
+                left: -200px;               
+            }
+            @include breakpoint($bp-700) {
+                height: 570px;
+                top: 0px;
+                left: -200px;               
             }
             @include breakpoint($bp-600) {
                 height: 530px;

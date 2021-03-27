@@ -1,6 +1,6 @@
 .btn {
     width: 279px;
-    height: 85px;
+    height: 80px;
     background: linear-gradient(180deg, #FFA53C 0%, #F37029 100%);
     border-radius: 4px;
     color: $white;
@@ -41,11 +41,11 @@
     }
     @include breakpoint($bp-850) {
         width: 250px;
-        height: 65px;
         font-size: 16px;
         line-height: 23px;
     }
     @include breakpoint($bp-800) {
+        width: 230px;
         font-size: 15px;
         line-height: 21px;
     }

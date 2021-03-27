@@ -47,6 +47,9 @@
             &::placeholder {
                 color: $gray;
             }
+            @include breakpoint($bp-1140) {
+                width: 240px;
+            }
             @include breakpoint($bp-1000) {
                 width: 210px;
             }

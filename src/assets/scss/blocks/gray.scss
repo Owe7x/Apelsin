@@ -79,6 +79,10 @@
             font-size: 15px;
             line-height: 21px;
         }
+        @include breakpoint($bp-500) {
+            font-size: 13px;
+            line-height: 21px;
+        }
     }
     &:nth-child(2) {
         margin-top: 80px;

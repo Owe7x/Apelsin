@@ -64,7 +64,7 @@ $("#phone").mask("+7(999) 999-9999")
      phone: 'Это поле является обязательным'
    },
    submitHandler: function(form) {
-    var url = "/thanks.html";
+    var url = "../thanks.html";
     $(location).attr('href',url);
       $("#form1").submit(function() { //Change
         var th = $(this);
@@ -103,7 +103,7 @@ $("#phone").mask("+7(999) 999-9999")
     phone: 'Это поле является обязательным'
    },
    submitHandler: function(form) {
-    var url = "/thanks.html";
+    var url = "./thanks.html";
     $(location).attr('href',url);
     $("#form2").submit(function() { //Change
       var th = $(this);

@@ -16,8 +16,8 @@
         line-height: 50px;
     }
     @include breakpoint($bp-600) {
-        font-size: 35px;
-        line-height: 40px;
+        font-size: 30px;
+        line-height: 36px;
     }
     @include breakpoint($bp-400) {
         font-size: 22px;

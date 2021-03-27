@@ -27,7 +27,16 @@
         top: 0;
         left: 0;
         z-index: -1;
+        @include breakpoint($bp-1800) {
+            width: 900px;
+        }
         @include breakpoint($bp-1539) {
+            width: 790px;
+        }
+        @include breakpoint($bp-1400) {
+            width: 600px;
+        }
+        @include breakpoint($bp-1200) {
             display: none;
         }
     }

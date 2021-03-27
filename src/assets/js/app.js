@@ -64,12 +64,8 @@ $("#phone").mask("+7(999) 999-9999")
      phone: 'Это поле является обязательным'
    },
    submitHandler: function(form) {
-    $(".modal-wrapper").addClass('block')
-    setTimeout(function() {
-      $(".modal-wrapper").delay(3000).fadeOut(); 
-      $(".modal-wrapper").removeClass('block')
-    }, 5000);
-
+    var url = "/thanks.html";
+    $(location).attr('href',url);
       $("#form1").submit(function() { //Change
         var th = $(this);
         $.ajax({
@@ -107,11 +103,8 @@ $("#phone").mask("+7(999) 999-9999")
     phone: 'Это поле является обязательным'
    },
    submitHandler: function(form) {
-    $(".modal-wrapper").addClass('block')
-    setTimeout(function() {
-      $(".modal-wrapper").delay(3000).fadeOut(); 
-      $(".modal-wrapper").removeClass('block')
-    }, 5000);
+    var url = "/thanks.html";
+    $(location).attr('href',url);
     $("#form2").submit(function() { //Change
       var th = $(this);
       $.ajax({
@@ -129,46 +122,265 @@ $("#phone").mask("+7(999) 999-9999")
     });
    }
  });
+ 
  $('#form3').validate({
-   rules: {
-     fname: 'required',
-     user_email: {
-       required: true,
-       email: true,
-     },
-     phone: {
+  rules: {
+    fname: 'required',
+    user_email: {
       required: true,
-      minlength: 10,
+      email: true,
+    },
+    phone: {
+     required: true,
+     minlength: 10,
+ },
   },
-   },
-   messages: {
-    fname: 'Это поле является обязательным',
-    user_email: 'Это поле является обязательным',
-    phone: 'Это поле является обязательным'
-   },
-   submitHandler: function(form) {
-     $('#modal').css('display', 'none')
-    $(".modal-wrapper").addClass('block')
-    setTimeout(function() {
-      $(".modal-wrapper").delay(3000).fadeOut(); 
-      $(".modal-wrapper").removeClass('block')
-    }, 5000);
-    $("#form2").submit(function() { //Change
-      var th = $(this);
-      $.ajax({
-        type: "POST",
-        url: "mail.php", //Change
-        data: th.serialize()
-      }).done(function() {
-        alert("Thank you!");
-        setTimeout(function() {
-          // Done Functions
-          th.trigger("reset");
-        }, 1000);
-      });
-      return false;
-    });
-   }
+  messages: {
+   fname: 'Это поле является обязательным',
+   user_email: 'Это поле является обязательным',
+   phone: 'Это поле является обязательным'
+  },
+  submitHandler: function(form) {
+    var url = "/thanks.html";
+    $(location).attr('href',url);
+   $("#form3").submit(function() { //Change
+     var th = $(this);
+     $.ajax({
+       type: "POST",
+       url: "mail.php", //Change
+       data: th.serialize()
+     }).done(function() {
+       alert("Thank you!");
+       setTimeout(function() {
+         // Done Functions
+         th.trigger("reset");
+       }, 1000);
+     });
+     return false;
+   });
+  }
+ });
+ $('#form4').validate({
+  rules: {
+    fname: 'required',
+    user_email: {
+      required: true,
+      email: true,
+    },
+    phone: {
+     required: true,
+     minlength: 10,
+ },
+  },
+  messages: {
+   fname: 'Это поле является обязательным',
+   user_email: 'Это поле является обязательным',
+   phone: 'Это поле является обязательным'
+  },
+  submitHandler: function(form) {
+    var url = "/thanks.html";
+    $(location).attr('href',url);
+   $("#form4").submit(function() { //Change
+     var th = $(this);
+     $.ajax({
+       type: "POST",
+       url: "mail.php", //Change
+       data: th.serialize()
+     }).done(function() {
+       alert("Thank you!");
+       setTimeout(function() {
+         // Done Functions
+         th.trigger("reset");
+       }, 1000);
+     });
+     return false;
+   });
+  }
+ });
+ $('#form5').validate({
+  rules: {
+    fname: 'required',
+    user_email: {
+      required: true,
+      email: true,
+    },
+    phone: {
+     required: true,
+     minlength: 10,
+ },
+  },
+  messages: {
+   fname: 'Это поле является обязательным',
+   user_email: 'Это поле является обязательным',
+   phone: 'Это поле является обязательным'
+  },
+  submitHandler: function(form) {
+    var url = "/thanks.html";
+    $(location).attr('href',url);
+   $("#form5").submit(function() { //Change
+     var th = $(this);
+     $.ajax({
+       type: "POST",
+       url: "mail.php", //Change
+       data: th.serialize()
+     }).done(function() {
+       alert("Thank you!");
+       setTimeout(function() {
+         // Done Functions
+         th.trigger("reset");
+       }, 1000);
+     });
+     return false;
+   });
+  }
+ });
+ $('#form6').validate({
+  rules: {
+    fname: 'required',
+    user_email: {
+      required: true,
+      email: true,
+    },
+    phone: {
+     required: true,
+     minlength: 10,
+ },
+  },
+  messages: {
+   fname: 'Это поле является обязательным',
+   user_email: 'Это поле является обязательным',
+   phone: 'Это поле является обязательным'
+  },
+  submitHandler: function(form) {
+    var url = "/thanks.html";
+    $(location).attr('href',url);
+   $("#form6").submit(function() { //Change
+     var th = $(this);
+     $.ajax({
+       type: "POST",
+       url: "mail.php", //Change
+       data: th.serialize()
+     }).done(function() {
+       alert("Thank you!");
+       setTimeout(function() {
+         // Done Functions
+         th.trigger("reset");
+       }, 1000);
+     });
+     return false;
+   });
+  }
+ });
+ $('#form7').validate({
+  rules: {
+    fname: 'required',
+    user_email: {
+      required: true,
+      email: true,
+    },
+    phone: {
+     required: true,
+     minlength: 10,
+ },
+  },
+  messages: {
+   fname: 'Это поле является обязательным',
+   user_email: 'Это поле является обязательным',
+   phone: 'Это поле является обязательным'
+  },
+  submitHandler: function(form) {
+    var url = "/thanks.html";
+    $(location).attr('href',url);
+   $("#form7").submit(function() { //Change
+     var th = $(this);
+     $.ajax({
+       type: "POST",
+       url: "mail.php", //Change
+       data: th.serialize()
+     }).done(function() {
+       alert("Thank you!");
+       setTimeout(function() {
+         // Done Functions
+         th.trigger("reset");
+       }, 1000);
+     });
+     return false;
+   });
+  }
+ });
+ $('#form8').validate({
+  rules: {
+    fname: 'required',
+    user_email: {
+      required: true,
+      email: true,
+    },
+    phone: {
+     required: true,
+     minlength: 10,
+ },
+  },
+  messages: {
+   fname: 'Это поле является обязательным',
+   user_email: 'Это поле является обязательным',
+   phone: 'Это поле является обязательным'
+  },
+  submitHandler: function(form) {
+    var url = "/thanks.html";
+    $(location).attr('href',url);
+   $("#form8").submit(function() { //Change
+     var th = $(this);
+     $.ajax({
+       type: "POST",
+       url: "mail.php", //Change
+       data: th.serialize()
+     }).done(function() {
+       alert("Thank you!");
+       setTimeout(function() {
+         // Done Functions
+         th.trigger("reset");
+       }, 1000);
+     });
+     return false;
+   });
+  }
+ });
+ $('#form9').validate({
+  rules: {
+    fname: 'required',
+    user_email: {
+      required: true,
+      email: true,
+    },
+    phone: {
+     required: true,
+     minlength: 10,
+ },
+  },
+  messages: {
+   fname: 'Это поле является обязательным',
+   user_email: 'Это поле является обязательным',
+   phone: 'Это поле является обязательным'
+  },
+  submitHandler: function(form) {
+    var url = "/thanks.html";
+    $(location).attr('href',url);
+   $("#form9").submit(function() { //Change
+     var th = $(this);
+     $.ajax({
+       type: "POST",
+       url: "mail.php", //Change
+       data: th.serialize()
+     }).done(function() {
+       alert("Thank you!");
+       setTimeout(function() {
+         // Done Functions
+         th.trigger("reset");
+       }, 1000);
+     });
+     return false;
+   });
+  }
  });
  $('.spoiler_links').click(function(){
   $(this).parents().children('.spoiler_body').toggle('slow');

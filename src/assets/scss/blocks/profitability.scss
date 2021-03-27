@@ -23,6 +23,15 @@
         width: 1134px;
         height: 741px;
         z-index: -1;
+        @include breakpoint($bp-1750) {
+            width: 1000px;
+        }
+        @include breakpoint($bp-1539) {
+            width: 680px;
+        }
+        @include breakpoint($bp-1200) {
+            width: 600px;
+        }
         @include breakpoint($bp-1140) {
             display: none;
         }

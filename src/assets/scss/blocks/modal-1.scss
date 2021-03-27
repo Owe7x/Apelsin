@@ -79,12 +79,8 @@
     }
     form {
         input {
-            width: 100%;
-            height: 80px;
-            margin-bottom: 20px;
-            border: 1px solid #5C8A7E;
-            padding-left: 16px;
-            color: $gray;
+            border: none;
+            margin-right: 15px;         
             font-size: 18px;
             line-height: 27px;
             &::placeholder {

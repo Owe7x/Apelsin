@@ -592,6 +592,14 @@ body {
 .green-color {
   color: #5C8A7E; }
 
+.number {
+  white-space: nowrap; }
+
+.city {
+  font-size: 17px;
+  line-height: 35px;
+  color: #989898; }
+
 .form {
   background-color: #fff;
   max-width: 1239px;
@@ -628,35 +636,12 @@ body {
   .form form {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 100%; }
     .form form input {
-      border: 1px solid #5C8A7E;
-      width: 271px;
-      height: 80px;
-      margin-right: 15px;
-      padding-left: 16px;
+      border: none;
       font-size: 18px;
       line-height: 27px; }
-      .form form input::placeholder {
-        color: #989898; }
-      @media screen and (max-width: 1140px) {
-        .form form input {
-          width: 240px; } }
-      @media screen and (max-width: 1000px) {
-        .form form input {
-          width: 210px; } }
-      @media screen and (max-width: 900px) {
-        .form form input {
-          width: 180px; } }
-      @media screen and (max-width: 800px) {
-        .form form input {
-          width: 230px;
-          margin-bottom: 15px;
-          margin-right: 0; } }
-      @media screen and (max-width: 450px) {
-        .form form input {
-          height: 60px;
-          font-size: 16px; } }
     @media screen and (max-width: 800px) {
       .form form {
         flex-direction: column; } }
@@ -688,7 +673,29 @@ body {
 
 .form__link {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  border: 1px solid #5C8A7E;
+  width: 24%;
+  height: 80px;
+  padding-left: 16px;
+  margin-right: 5px;
+  justify-content: center; }
+  .form__link label {
+    color: red;
+    font-size: 13px;
+    line-height: 10px; }
+  .form__link--modal {
+    width: 100% !important;
+    margin-bottom: 20px; }
+    .form__link--modal .label-name {
+      text-align: left; }
+    .form__link--modal label {
+      text-align: left; }
+  @media screen and (max-width: 800px) {
+    .form__link {
+      width: 230px;
+      margin-right: 0;
+      margin-bottom: 20px; } }
 
 .fancybox-content {
   padding: 0 !important; }
@@ -765,7 +772,16 @@ body {
     top: 0;
     left: 0;
     z-index: -1; }
+    @media screen and (max-width: 1800px) {
+      #profit::after {
+        width: 900px; } }
     @media screen and (max-width: 1539px) {
+      #profit::after {
+        width: 790px; } }
+    @media screen and (max-width: 1400px) {
+      #profit::after {
+        width: 600px; } }
+    @media screen and (max-width: 1200px) {
       #profit::after {
         display: none; } }
   #profit::before {
@@ -1258,12 +1274,8 @@ body {
     font-style: italic;
     text-align: center; }
   .modal-2 form input {
-    width: 100%;
-    height: 80px;
-    margin-bottom: 20px;
-    border: 1px solid #5C8A7E;
-    padding-left: 16px;
-    color: #989898;
+    border: none;
+    margin-right: 15px;
     font-size: 18px;
     line-height: 27px; }
     .modal-2 form input::placeholder {
@@ -2307,6 +2319,15 @@ body {
     width: 1134px;
     height: 741px;
     z-index: -1; }
+    @media screen and (max-width: 1750px) {
+      #profitability::after {
+        width: 1000px; } }
+    @media screen and (max-width: 1539px) {
+      #profitability::after {
+        width: 680px; } }
+    @media screen and (max-width: 1200px) {
+      #profitability::after {
+        width: 600px; } }
     @media screen and (max-width: 1140px) {
       #profitability::after {
         display: none; } }
@@ -2681,6 +2702,7 @@ body {
     height: 1251px;
     z-index: -1; }
   .footer-footer {
+    margin-top: auto;
     background: #5C8A7E;
     padding: 44px 0 36px; }
     .footer-footer__item a {
@@ -2772,3 +2794,16 @@ body {
     text-align: center; }
     .tel:last-child {
       margin-bottom: 0px; } }
+
+.thanks {
+  background: url(../images/bg-9.png) no-repeat;
+  background-size: cover;
+  background-position: bottom right; }
+
+.thanks-container {
+  display: flex;
+  align-items: center;
+  max-width: 1144px;
+  margin: 0 auto;
+  text-align: center;
+  height: 72vh; }

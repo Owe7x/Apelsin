@@ -103,7 +103,7 @@ $("#phone").mask("+7(999) 999-9999")
     phone: 'Это поле является обязательным'
    },
    submitHandler: function(form) {
-    var url = "https://owe7x.github.io/Apelsin/dist/thanks.html";
+    var url = "../Apelsin/dist/thanks.html";
     $(location).attr('href',url);
     $("#form2").submit(function() { //Change
       var th = $(this);
@@ -141,7 +141,7 @@ $("#phone").mask("+7(999) 999-9999")
    phone: 'Это поле является обязательным'
   },
   submitHandler: function(form) {
-    var url = "https://owe7x.github.io/Apelsin/dist/thanks.html";
+    var url = "./Apelsin/dist/thanks.html";
     $(location).attr('href',url);
    $("#form3").submit(function() { //Change
      var th = $(this);
@@ -178,7 +178,7 @@ $("#phone").mask("+7(999) 999-9999")
    phone: 'Это поле является обязательным'
   },
   submitHandler: function(form) {
-    var url = "https://owe7x.github.io/Apelsin/dist/thanks.html";
+    var url = "../dist/thanks.html";
     $(location).attr('href',url);
    $("#form4").submit(function() { //Change
      var th = $(this);
@@ -215,7 +215,7 @@ $("#phone").mask("+7(999) 999-9999")
    phone: 'Это поле является обязательным'
   },
   submitHandler: function(form) {
-    var url = "https://owe7x.github.io/Apelsin/dist/thanks.html";
+    var url = "./dist/thanks.html";
     $(location).attr('href',url);
    $("#form5").submit(function() { //Change
      var th = $(this);
@@ -252,7 +252,7 @@ $("#phone").mask("+7(999) 999-9999")
    phone: 'Это поле является обязательным'
   },
   submitHandler: function(form) {
-    var url = "https://owe7x.github.io/Apelsin/dist/thanks.html";
+    var url = "/dist/thanks.html";
     $(location).attr('href',url);
    $("#form6").submit(function() { //Change
      var th = $(this);

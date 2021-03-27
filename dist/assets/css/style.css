@@ -854,46 +854,13 @@ body {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    width: 100%;
 }
 
 .form form input {
     border: none;
-    margin-right: 15px;
     font-size: 18px;
     line-height: 27px;
-}
-
-@media screen and (max-width: 1140px) {
-    .form form input {
-        width: 240px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .form form input {
-        width: 210px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .form form input {
-        width: 180px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .form form input {
-        width: 230px;
-        margin-bottom: 15px;
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .form form input {
-        height: 60px;
-        font-size: 16px;
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -948,9 +915,10 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     border: 1px solid #5C8A7E;
-    width: 271px;
+    width: 24%;
     height: 80px;
     padding-left: 16px;
+    margin-right: 5px;
     -ms-flex-pack: center;
     justify-content: center;
 }
@@ -962,8 +930,24 @@ body {
 }
 
 .form__link--modal {
-    width: 100%;
+    width: 100% !important;
     margin-bottom: 20px;
+}
+
+.form__link--modal .label-name {
+    text-align: left;
+}
+
+.form__link--modal label {
+    text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    .form__link {
+        width: 230px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 .fancybox-content {
@@ -4135,6 +4119,7 @@ body {
 }
 
 .footer-footer {
+    margin-top: auto;
     background: #5C8A7E;
     padding: 44px 0 36px;
 }
@@ -4272,4 +4257,21 @@ body {
     .tel:last-child {
         margin-bottom: 0px;
     }
+}
+
+.thanks {
+    background: url(../images/bg-9.png) no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.thanks-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 1144px;
+    margin: 0 auto;
+    text-align: center;
+    height: 72vh;
 }

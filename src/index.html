@@ -17,26 +17,24 @@ title: Apelsin | Home
         <div class="form-title">
             Оставьте заявку и <span class="orange"> получите полную презентацию </span> для принятия решения о партнёрстве
         </div>
-        <form id="form1" method="post" action="mail.php">
-            <input type="hidden" name="project_name" value="Апельсин">
-            <input type="hidden" name="admin_email" value="test@mail.ru">
-            <input type="hidden" name="form_subject" value="Первая Форма">
-            <div class="form__link">
-                <div class="label-name">Город</div>
-                <input type="text" id="fname" name="fname" placeholder="Город">
-                <label for="fname" class="error"></label>
-            </div>
-            <div class="form__link">
-                <div class="label-name">Телефон</div>
-                <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
-                <label for="phone"></label>
-            </div>
-            <div class="form__link">
-                <div class="label-name">Электронная почта</div>
-                <input type="email" id="user_email" name="user_email" placeholder="MAIL@MAIL.RU">
-                <label for="user_email"></label>
-            </div>
-            <button type="submit" value="Submit" class="btn ">Получить презентацию</button>
+        <form action="mail.php" method="post" id="form1">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="admin_email[]" value="test@mail.ru">
+                <input type="hidden" name="form_subject" value="Первая Форма">
+                <div class="form__link">
+                    <label for="name">Имя</label>
+                    <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Город">
+                    <label for="fname" class="error"></label>
+                </div>
+                <div class="form__link">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
+                </div>
+                <div class="form__link">
+                    <label for="email">Почта</label>
+                    <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
+                </div>
+                <button type="submit" value="Submit" class="btn ">Получить презентацию</button>        
         </form>
         <div class="form-subtitle">
             Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a href="№"> политикой конфиденциальности</a> 
@@ -79,7 +77,7 @@ title: Apelsin | Home
             </div>
             <div class="step-block__info">
                 <div class="p">
-                    Уникальная разработка <br> тематического дизайн-оформления салона на все международные праздники
+                    Учебный центр для мастеров и администраторов
                 </div>
             </div>
         </div>
@@ -423,6 +421,12 @@ title: Apelsin | Home
                     <div class="master-block">
                         скрипты для общения с клиентами салона
                     </div>
+                    <div class="master-block">
+                        готовые протоколы процедур
+                    </div>
+                    <div class="master-block">
+                        офлайн обучение косметологов и администраторов в учебном центре
+                    </div>
                 </div>
             </div>
             <div class="p">
@@ -447,10 +451,10 @@ title: Apelsin | Home
 </section>
 <section id="program">
     <div class="title">
-        Авторские уходовые программы <br> <span class="orange"> для разных возрастов с 18 лет </span>
+        Авторские уходовые программы <br> <span class="orange"> для любых возрастов с 14 до 80 лет </span>
     </div>
     <div class="p">
-        За 5 лет работы мы выработали собственные авторские методики омоложения и ухода с использованием итальянской косметики Natinyel для клиентов разных возрастных групп, начиная с 18 лет. А также расширили целевую аудиторию салона за счёт включения в каталог процедур для мужчин.
+        За 5 лет работы мы выработали собственные авторские методики омоложения и ухода с использованием итальянской космецевтики Natinyel для клиентов разных возрастных групп, начиная с 18 лет. А также расширили целевую аудиторию салона за счёт включения в каталог процедур для мужчин.
     </div>
     <div class="program-images">
         <div class="program-img">
@@ -691,26 +695,24 @@ title: Apelsin | Home
     <div class="form-title">
         Оставьте заявку, чтобы получить полную финансовую модель «Apelsin Beauty»
     </div>
-    <form id="form2" method="post" action="mail.php">
-        <input type="hidden" name="project_name" value="Апельсин">
-        <input type="hidden" name="admin_email" value="test@mail.ru">
+    <form action="mail.php" method="post" id="form2">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="admin_email[]" value="test@mail.ru">
         <input type="hidden" name="form_subject" value="Первая Форма">
         <div class="form__link">
-            <div class="label-name">Город</div>
-            <input type="text" id="fname" name="fname" placeholder="Город">
+            <label for="name">Имя</label>
+            <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Город">
             <label for="fname" class="error"></label>
         </div>
         <div class="form__link">
-            <div class="label-name">Телефон</div>
-            <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
-            <label for="phone"></label>
+            <label for="tel">Телефон</label>
+            <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
         </div>
         <div class="form__link">
-            <div class="label-name">Электронная почта</div>
-            <input type="email" id="user_email" name="user_email" placeholder="MAIL@MAIL.RU">
-            <label for="user_email"></label>
+            <label for="email">Почта</label>
+            <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
         </div>
-        <button type="submit" value="Submit" class="btn ">Получить фин.модель</button>
+        <button type="submit" value="Submit" class="btn ">Получить презентацию</button>        
     </form>
     <div class="form-subtitle">
         Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a href="№"> политикой конфиденциальности</a> 
@@ -734,7 +736,7 @@ title: Apelsin | Home
                     </div>
                 </div>
                 <div class="spoiler_body">
-                    50% успеха салона красоты — это грамотный подбор локации. С этим поможем. А также ваш салон будет продвигаться вместе с общим брендом через интернет-рекламу.                </div>
+                    50% успеха салона красоты — это мастера. Ваши мастера перед тем, как приступить к работе, проходят обучение в нашем обучающем центре, где передадут все методики действительно работающего ухода за кожей клиентов. </div>
             </div>
             <div class="spoiler-block">
                 <div class="questions-menu">
@@ -835,26 +837,24 @@ title: Apelsin | Home
          <div class="modal-2">
              <div class="modal-2__content">
                  <div class="modal-2__title">Оставьте заявку и получите <span class="orange">бизнес-план для своей локации</span> </div>
-                 <form id="form3" method="post" action="mail.php">
-                     <input type="hidden" name="project_name" value="Апельсин">
-                     <input type="hidden" name="admin_email" value="test@mail.ru">
-                     <input type="hidden" name="form_subject" value="Первая Форма">
-                     <div class="form__link form__link--modal">
-                         <div class="label-name">Город</div>
-                         <input type="text" id="fname" name="fname" placeholder="Город">
-                         <label for="fname" class="error"></label>
-                     </div>
-                     <div class="form__link form__link--modal">
-                         <div class="label-name">Телефон</div>
-                         <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
-                         <label for="phone"></label>
-                     </div>
-                     <div class="form__link form__link--modal">
-                         <div class="label-name">Электронная почта</div>
-                         <input type="email" id="user_email" name="user_email" placeholder="MAIL@MAIL.RU">
-                         <label for="user_email"></label>
-                     </div>
-                     <button type="submit" value="Submit" class="btn btn--form">Получить бизнес-план</button>
+                 <form action="mail.php" method="post" id="form3">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="admin_email[]" value="test@mail.ru">
+                    <input type="hidden" name="form_subject" value="Первая Форма">
+                    <div class="form__link form__link--modal">
+                        <label for="name">Имя</label>
+                        <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Город">
+                        <label for="fname" class="error"></label>
+                    </div>
+                    <div class="form__link form__link--modal">
+                        <label for="tel">Телефон</label>
+                        <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
+                    </div>
+                    <div class="form__link form__link--modal">
+                        <label for="email">Почта</label>
+                        <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
+                    </div>
+                    <button type="submit" value="Submit" class="btn btn--modal">Получить презентацию</button>        
                  </form>
                  <div class="modal-2__subtitle">
                      Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a href="№"> политикой конфиденциальности</a> 
@@ -868,26 +868,24 @@ title: Apelsin | Home
 	<div class="modal-2">
         <div class="modal-2__content">
             <div class="modal-2__title">Оставьте заявку, чтобы<span class="orange"> зайти в гости в салон Apelsin Beauty.</span> </div>
-            <form id="form4" method="post" action="mail.php">
-                <input type="hidden" name="project_name" value="Апельсин">
-                <input type="hidden" name="admin_email" value="test@mail.ru">
+            <form action="mail.php" method="post" id="form4">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="admin_email[]" value="test@mail.ru">
                 <input type="hidden" name="form_subject" value="Первая Форма">
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Город</div>
-                    <input type="text" id="fname" name="fname" placeholder="Город">
+                    <label for="name">Имя</label>
+                    <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Город">
                     <label for="fname" class="error"></label>
                 </div>
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Телефон</div>
-                    <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
-                    <label for="phone"></label>
+                    <label for="tel">Телефон</label>
+                    <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
                 </div>
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Электронная почта</div>
-                    <input type="email" id="user_email" name="user_email" placeholder="MAIL@MAIL.RU">
-                    <label for="user_email"></label>
+                    <label for="email">Почта</label>
+                    <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
                 </div>
-                <button type="submit" value="Submit" class="btn btn--form">Зайти в гости</button>
+                <button type="submit" value="Submit" class="btn btn--modal">Получить презентацию</button>        
             </form>
             <div class="modal-2__subtitle">
                 Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a href="№"> политикой конфиденциальности</a> 
@@ -899,26 +897,24 @@ title: Apelsin | Home
 	<div class="modal-2">
         <div class="modal-2__content">
             <div class="modal-2__title">Оставьте заявку, чтобы<span class="orange"> рассчитать вложения и прибыль.</span> </div>
-            <form id="form5" method="post" action="mail.php">
-                <input type="hidden" name="project_name" value="Апельсин">
-                <input type="hidden" name="admin_email" value="test@mail.ru">
+            <form action="mail.php" method="post" id="form5">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="admin_email[]" value="test@mail.ru">
                 <input type="hidden" name="form_subject" value="Первая Форма">
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Город</div>
-                    <input type="text" id="fname" name="fname" placeholder="Город">
+                    <label for="name">Имя</label>
+                    <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Город">
                     <label for="fname" class="error"></label>
                 </div>
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Телефон</div>
-                    <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
-                    <label for="phone"></label>
+                    <label for="tel">Телефон</label>
+                    <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
                 </div>
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Электронная почта</div>
-                    <input type="email" id="user_email" name="user_email" placeholder="MAIL@MAIL.RU">
-                    <label for="user_email"></label>
+                    <label for="email">Почта</label>
+                    <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
                 </div>
-                <button type="submit" value="Submit" class="btn btn--form">Рассчитать</button>
+                <button type="submit" value="Submit" class="btn btn--modal">Получить презентацию</button>        
             </form>
             <div class="modal-2__subtitle">
                 Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a href="№"> политикой конфиденциальности</a> 
@@ -930,26 +926,24 @@ title: Apelsin | Home
 	<div class="modal-2">
         <div class="modal-2__content">
             <div class="modal-2__title">Оставьте заявку, чтобы<span class="orange"> познакомиться с лектором.</span> </div>
-            <form id="form6" method="post" action="mail.php">
-                <input type="hidden" name="project_name" value="Апельсин">
-                <input type="hidden" name="admin_email" value="test@mail.ru">
+            <form action="mail.php" method="post" id="form6">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="admin_email[]" value="test@mail.ru">
                 <input type="hidden" name="form_subject" value="Первая Форма">
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Город</div>
-                    <input type="text" id="fname" name="fname" placeholder="Город">
+                    <label for="name">Имя</label>
+                    <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Город">
                     <label for="fname" class="error"></label>
                 </div>
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Телефон</div>
-                    <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
-                    <label for="phone"></label>
+                    <label for="tel">Телефон</label>
+                    <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
                 </div>
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Электронная почта</div>
-                    <input type="email" id="user_email" name="user_email" placeholder="MAIL@MAIL.RU">
-                    <label for="user_email"></label>
+                    <label for="email">Почта</label>
+                    <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
                 </div>
-                <button type="submit" value="Submit" class="btn btn--form">Познакомиться</button>
+                <button type="submit" value="Submit" class="btn btn--modal">Получить презентацию</button>        
             </form>
             <div class="modal-2__subtitle">
                 Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a href="№"> политикой конфиденциальности</a> 
@@ -961,26 +955,24 @@ title: Apelsin | Home
 	<div class="modal-2">
         <div class="modal-2__content">
             <div class="modal-2__title">Оставьте заявку, чтобы<span class="orange"> познакомиться с лектором.</span> </div>
-            <form id="form7" method="post" action="mail.php">
-                <input type="hidden" name="project_name" value="Апельсин">
-                <input type="hidden" name="admin_email" value="test@mail.ru">
+            <form action="mail.php" method="post" id="form7">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="admin_email[]" value="test@mail.ru">
                 <input type="hidden" name="form_subject" value="Первая Форма">
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Город</div>
-                    <input type="text" id="fname" name="fname" placeholder="Город">
+                    <label for="name">Имя</label>
+                    <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Город">
                     <label for="fname" class="error"></label>
                 </div>
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Телефон</div>
-                    <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
-                    <label for="phone"></label>
+                    <label for="tel">Телефон</label>
+                    <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
                 </div>
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Электронная почта</div>
-                    <input type="email" id="user_email" name="user_email" placeholder="MAIL@MAIL.RU">
-                    <label for="user_email"></label>
+                    <label for="email">Почта</label>
+                    <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
                 </div>
-                <button type="submit" value="Submit" class="btn btn--form">Познакомиться</button>
+                <button type="submit" value="Submit" class="btn btn--modal">Получить презентацию</button>        
             </form>
             <div class="modal-2__subtitle">
                 Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a href="№"> политикой конфиденциальности</a> 
@@ -992,26 +984,24 @@ title: Apelsin | Home
 	<div class="modal-2">
         <div class="modal-2__content">
             <div class="modal-2__title">Оставьте заявку, чтобы<span class="orange"> узнать больше о методиках.</span> </div>
-            <form id="form8" method="post" action="mail.php">
-                <input type="hidden" name="project_name" value="Апельсин">
-                <input type="hidden" name="admin_email" value="test@mail.ru">
+            <form action="mail.php" method="post" id="form8">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="admin_email[]" value="test@mail.ru">
                 <input type="hidden" name="form_subject" value="Первая Форма">
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Город</div>
-                    <input type="text" id="fname" name="fname" placeholder="Город">
+                    <label for="name">Имя</label>
+                    <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Город">
                     <label for="fname" class="error"></label>
                 </div>
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Телефон</div>
-                    <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
-                    <label for="phone"></label>
+                    <label for="tel">Телефон</label>
+                    <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
                 </div>
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Электронная почта</div>
-                    <input type="email" id="user_email" name="user_email" placeholder="MAIL@MAIL.RU">
-                    <label for="user_email"></label>
+                    <label for="email">Почта</label>
+                    <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
                 </div>
-                <button type="submit" value="Submit" class="btn btn--form">Узнать больше</button>
+                <button type="submit" value="Submit" class="btn btn--modal">Получить презентацию</button>        
             </form>
             <div class="modal-2__subtitle">
                 Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a href="№"> политикой конфиденциальности</a> 
@@ -1023,26 +1013,24 @@ title: Apelsin | Home
 	<div class="modal-2">
         <div class="modal-2__content">
             <div class="modal-2__title">Оставьте заявку, чтобы<span class="orange"> узнать больше о мерах поддержки франчайзи.</span> </div>
-            <form id="form9" method="post" action="mail.php">
-                <input type="hidden" name="project_name" value="Апельсин">
-                <input type="hidden" name="admin_email" value="test@mail.ru">
+            <form action="mail.php" method="post" id="form9">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="admin_email[]" value="test@mail.ru">
                 <input type="hidden" name="form_subject" value="Первая Форма">
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Город</div>
-                    <input type="text" id="fname" name="fname" placeholder="Город">
+                    <label for="name">Имя</label>
+                    <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Город">
                     <label for="fname" class="error"></label>
                 </div>
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Телефон</div>
-                    <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
-                    <label for="phone"></label>
+                    <label for="tel">Телефон</label>
+                    <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
                 </div>
                 <div class="form__link form__link--modal">
-                    <div class="label-name">Электронная почта</div>
-                    <input type="email" id="user_email" name="user_email" placeholder="MAIL@MAIL.RU">
-                    <label for="user_email"></label>
+                    <label for="email">Почта</label>
+                    <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
                 </div>
-                <button type="submit" value="Submit" class="btn btn--form">Узнать больше</button>
+                <button type="submit" value="Submit" class="btn btn--modal">Получить презентацию</button>        
             </form>
             <div class="modal-2__subtitle">
                 Я подтверждаю, что ознакомлен, и даю согласие на обработку персональных данных на условиях и для целей, определяемых <a href="№"> политикой конфиденциальности</a> 

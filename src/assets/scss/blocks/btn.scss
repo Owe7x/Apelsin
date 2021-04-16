@@ -20,9 +20,7 @@
         width: 376px;
     }
     &--modal {
-        @include breakpoint($bp-500) {
-            width: 100%!important;
-        }
+        width: 100%!important;
     }
     &--form {
         width: 100%!important;
